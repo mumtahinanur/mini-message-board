@@ -10,6 +10,9 @@ const PORT = process.env.PORT || 3000;
 app.set("views", path.join(import.meta.dirname, "views"));
 app.set("view engine", "ejs");
 
+// Middleware
+app.use(express.urlencoded({ extended: true })); // parses form POST data into req.body
+
 // Routes
 app.use("/", indexRouter);
 
