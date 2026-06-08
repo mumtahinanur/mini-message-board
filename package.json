@@ -1,0 +1,24 @@
+{
+  "name": "mini-message-board",
+  "version": "1.0.0",
+  "description": "",
+  "homepage": "https://github.com/mumtahinanur/mini-message-board#readme",
+  "bugs": {
+    "url": "https://github.com/mumtahinanur/mini-message-board/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mumtahinanur/mini-message-board.git"
+  },
+  "license": "ISC",
+  "author": "Mumtahina Nur",
+  "type": "module",
+  "main": "app.js",
+  "scripts": {
+    "start": "node --watch --env-file=.env app.js"
+  },
+  "dependencies": {
+    "ejs": "^6.0.1",
+    "express": "^5.2.1"
+  }
+}
