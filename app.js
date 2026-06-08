@@ -6,6 +6,10 @@ const app = express();
 
 const PORT = process.env.PORT || 3000;
 
+// View engine setup
+app.set("views", path.join(import.meta.dirname, "views"));
+app.set("view engine", "ejs");
+
 // Routes
 app.use("/", indexRouter);
 
