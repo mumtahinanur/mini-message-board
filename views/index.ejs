@@ -6,12 +6,14 @@
 </head>
 <body>
   <h1>Mini Message Board</h1>
+  <a href="/new">+ New Message</a>
 
   <ul>
     <% messages.forEach((msg) => { %>
       <li>
         <strong><%= msg.user %></strong>: <%= msg.text %>
         <em>(<%= msg.added.toDateString() %>)</em>
+        <a href="/message/<%= msg.id %>">Open</a>
       </li>
     <% }) %>
   </ul>
