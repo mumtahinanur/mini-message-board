@@ -2,7 +2,9 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Message from <%= message.user %></title>
+  <link rel="stylesheet" href="/style.css">
 </head>
 <body>
   <h1>Message Details</h1>
@@ -10,6 +12,6 @@
   <p><strong>Message:</strong> <%= message.text %></p>
   <p><strong>Sent:</strong> <%= message.added.toDateString() %></p>
 
-  <a href="/">← Back to board</a>
+  <a href="/" class="back-link">← Back to board</a>
 </body>
 </html>

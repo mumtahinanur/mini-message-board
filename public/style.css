@@ -1,0 +1,158 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  line-height: 1.6;
+  color: #333;
+  background-color: #f5f5f5;
+}
+
+main, body {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+h1 {
+  color: #222;
+  margin-bottom: 20px;
+  font-size: 28px;
+}
+
+h1, p {
+  margin-bottom: 15px;
+}
+
+a {
+  color: #0066cc;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.nav-links {
+  margin-bottom: 20px;
+}
+
+.nav-links a {
+  display: inline-block;
+  padding: 8px 12px;
+  background-color: #0066cc;
+  color: white;
+  border-radius: 4px;
+  margin-right: 10px;
+  font-size: 14px;
+}
+
+.nav-links a:hover {
+  background-color: #0052a3;
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+li {
+  background: white;
+  padding: 15px;
+  margin-bottom: 12px;
+  border-radius: 4px;
+  border-left: 4px solid #0066cc;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+li strong {
+  color: #0066cc;
+  display: block;
+  margin-bottom: 5px;
+}
+
+li em {
+  color: #666;
+  font-size: 13px;
+}
+
+.message-link {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 5px 10px;
+  background-color: #f0f0f0;
+  border-radius: 3px;
+  font-size: 13px;
+}
+
+.message-link:hover {
+  background-color: #e0e0e0;
+}
+
+form {
+  background: white;
+  padding: 20px;
+  border-radius: 4px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+form div {
+  margin-bottom: 15px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: 500;
+  color: #222;
+}
+
+input[type="text"],
+textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-family: inherit;
+  font-size: 14px;
+}
+
+input[type="text"]:focus,
+textarea:focus {
+  outline: none;
+  border-color: #0066cc;
+  box-shadow: 0 0 0 2px rgba(0, 102, 204, 0.1);
+}
+
+textarea {
+  resize: vertical;
+  min-height: 120px;
+}
+
+button {
+  padding: 10px 20px;
+  background-color: #0066cc;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #0052a3;
+}
+
+.back-link {
+  display: inline-block;
+  margin-top: 20px;
+  color: #0066cc;
+}
+
+.back-link:hover {
+  text-decoration: underline;
+}

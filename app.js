@@ -11,6 +11,7 @@ app.set("views", path.join(import.meta.dirname, "views"));
 app.set("view engine", "ejs");
 
 // Middleware
+app.use(express.static(path.join(import.meta.dirname, "public")));
 app.use(express.urlencoded({ extended: true })); // parses form POST data into req.body
 
 // Routes

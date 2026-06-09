@@ -2,18 +2,22 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Mini Message Board</title>
+  <link rel="stylesheet" href="/style.css">
 </head>
 <body>
   <h1>Mini Message Board</h1>
-  <a href="/new">+ New Message</a>
+  <div class="nav-links">
+    <a href="/new">+ New Message</a>
+  </div>
 
   <ul>
     <% messages.forEach((msg) => { %>
       <li>
         <strong><%= msg.user %></strong>: <%= msg.text %>
         <em>(<%= msg.added.toDateString() %>)</em>
-        <a href="/message/<%= msg.id %>">Open</a>
+        <a href="/message/<%= msg.id %>" class="message-link">Open</a>
       </li>
     <% }) %>
   </ul>
