@@ -1,4 +1,5 @@
 import { Router } from "express";
+import { validateMessage } from "../middleware/validateMessage.js";
 import {
   getAllMessages,
   showForm,
@@ -15,7 +16,7 @@ router.get("/", getAllMessages);
 router.get("/new", showForm);
 
 // POST /new — handle form submission
-router.post("/new", createMessage);
+router.post("/new", validateMessage, createMessage);
 
 // GET /message/:id — show a single message
 router.get("/message/:id", getMessageById);

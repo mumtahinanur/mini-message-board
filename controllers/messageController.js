@@ -1,3 +1,4 @@
+import { validationResult, matchedData } from "express-validator";
 import * as db from "../db/queries.js";
 
 // Get all messages
@@ -13,7 +14,13 @@ export const showForm = (req, res) => {
 
 // Create a new message
 export const createMessage = async (req, res) => {
-  const { user, text } = req.body;
+  const errors = validationResult(req);
+
+  if (!errors.isEmpty()) {
+    return res.status(400).render("form", { errors: errors.array() });
+  }
+
+  const { user, text } = matchedData(req);
   await db.insertMessage(user, text);
   res.redirect("/");
 };

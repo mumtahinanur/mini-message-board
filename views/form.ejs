@@ -9,6 +9,14 @@
 <body>
   <h1>New Message</h1>
 
+  <% if (locals.errors) { %>
+    <ul>
+      <% errors.forEach(err => { %>
+        <li><%= err.msg %></li>
+      <% }) %>
+    </ul>
+  <% } %>
+
   <form method="POST" action="/new">
     <label>
       Your name:
