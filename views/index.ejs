@@ -15,8 +15,8 @@
   <ul>
     <% messages.forEach((msg) => { %>
       <li>
-        <strong><%= msg.user %></strong>: <%= msg.text %>
-        <em>(<%= msg.added.toDateString() %>)</em>
+        <strong><%= msg.author %></strong>: <%= msg.text %>
+        <em>(<%= msg.added_at.toDateString() %>)</em>
         <a href="/message/<%= msg.id %>" class="message-link">Open</a>
       </li>
     <% }) %>
